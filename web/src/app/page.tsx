@@ -11,32 +11,32 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-6 md:gap-8">
           {/* Text Block: flex-grow fills available space */} 
           <div className="flex-grow min-w-0">
-<h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-2">
+<h1 className="text-4xl sm:text-5xl font-bold leading-snug mb-2">
   Leadership Mastery
 </h1>
 
             <p className="text-base sm:text-lg text-white/90 mb-8">
               Neuroscience informed leadership development
             </p>
-                        <p className="text-base sm:text-lg text-white/90 mb-8">
+                        <p className="text-base sm:text-lg text-white/90 mb-8 font-bold">
                         Click to solve:
             </p>
 
             <div className="flex flex-col items-center gap-4 mt-8">
               <div className="flex flex-col gap-4 w-[22rem]">
-                <button className="w-full bg-teal-400 text-slate-900 font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
+                <button className="w-full bg-teal-400 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
                   Toxic Team Dynamics & Infighting
                 </button>
-                <button className="w-full bg-teal-400 text-slate-900 font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
+                <button className="w-full bg-teal-400 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
                   Decision Paralysis and Overwhelm
                 </button>
-                <button className="w-full bg-teal-400 text-slate-900 font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
+                <button className="w-full bg-teal-400 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
                   Lack of Creativity and Innovation
                 </button>
-                <button className="w-full bg-teal-400 text-slate-900 font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
+                <button className="w-full bg-teal-400 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
                   Frustrating Relationships
                 </button>
-                <button className="w-full bg-teal-400 text-slate-900 font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
+                <button className="w-full bg-teal-400 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
                   Lack of Purpose and Team Disengagement
                 </button>
               </div>
