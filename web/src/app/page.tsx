@@ -18,11 +18,12 @@ export default function Home() {
             <p className="text-base sm:text-lg text-white/90 mb-8">
               Neuroscience informed leadership development
             </p>
-                        <p className="text-base sm:text-lg text-white/90 mb-8 font-bold">
-                        Click to solve:
-            </p>
+
 
             <div className="flex flex-col items-center gap-4 mt-8">
+                                      <p className="text-base sm:text-lg text-white/90 mb-8 font-bold">
+                        Click to solve
+            </p>
               <div className="flex flex-col gap-4 w-[22rem]">
                 <button className="w-full bg-teal-400 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-teal-300 transition">
                   Toxic Team Dynamics & Infighting
