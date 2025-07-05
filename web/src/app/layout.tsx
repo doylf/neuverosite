@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Footer from './footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,8 +11,6 @@ export const metadata: Metadata = {
   title: 'Neuvero',
   description: 'Neuroscience-informed leadership development.',
 };
-
-
 
 export default function RootLayout({
   children,
@@ -38,26 +37,27 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col flex-1 min-h-full`}>
         {/* Persistent Header */}
-        <header className="flex items-center justify-between px-8 py-6 border-b border-slate-200 bg-[#f7f7f7] text-slate-900">
-          <div className="flex items-center space-x-2">
-<Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition">
-  <img src="/neulogo.png" alt="Neuvero Logo" className="h-6 w-6" />
-  <span className="text-xl font-bold text-[#15344a]">NEUVERO</span>
-</Link>
+        <header className="flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 py-6 border-b border-slate-200 bg-[#f7f7f7] text-slate-900">
+          <div className="flex items-center space-x-2 mb-4 sm:mb-0">
+            <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition">
+              <img src="/neulogo.png" alt="Neuvero Logo" className="h-6 w-6" />
+              <span className="text-xl font-bold text-[#15344a]">NEUVERO</span>
+            </Link>
           </div>
-          <nav className="space-x-6 text-slate-600">
+          <nav className="space-x-4 sm:space-x-6 text-slate-600">
             <a href="/coaching" className="hover:text-slate-900">Coaching</a>
             <a href="/education" className="hover:text-slate-900">Education</a>
             <a href="/neuro360" className="hover:text-slate-900">Neuro360</a>
           </nav>
-
-          
         </header>
 
         {/* Page Content */}
         {children}
+
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
